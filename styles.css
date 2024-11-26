@@ -9,12 +9,15 @@
 body {
     background-color: #f4f7fa;
     color: #333;
+	margin-left:150px;
+	margin-right:150px;
+	
 }
 
 /* Header and Navigation */
 header {
-    background-color: #333;
-    padding: 15px;
+    background-color:#039;
+   /* padding: 15px;*/
 }
 
 .menu {
@@ -25,17 +28,56 @@ header {
 
 .menu li {
     margin: 0 15px;
+	 display:block;
+	 
+  /* border:1px solid white;*/
+  width:120px;
+  height:35px;
+  text-align:center;
+  line-height:35px;
+  float:left;
+  position:relative;
+ /* border-right:solid 1px #999;*/
+ /* border-radius:8px;*/
+  
 }
+.menu ul li:last-child{border-right:none;}  
 
 .menu a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+	display:block;
+} 
+	.menu ul li a{
+text-decoration:none;
+ color:white;
+ display:block;
+ }
+.menu a:hover{ background:#0CF;
+color:#603;
+/*border-radius:2px;*/
 }
 
-.menu a:hover {
-    text-decoration: underline;
-}
+.menu ul ul
+ { position:absolute;
+ display:none;
+ }
+ 
+.menu ul li:hover > ul
+      { display:block;
+	  background:#333;
+	  }
+	  
+	  
+.menu ul ul ul {
+	margin-left:120px;
+	top:0px;
+}	
+  
+
+
+
 
 /* Home Section */
 #home {
