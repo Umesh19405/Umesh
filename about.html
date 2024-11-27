@@ -103,7 +103,7 @@
             margin-top: 2rem;
         }
 
-        /* Media Queries */
+        /* Mobile Navigation Styles */
         @media (max-width: 768px) {
             nav .menu {
                 display: none;
@@ -113,6 +113,8 @@
                 top: 100%;
                 left: 0;
                 right: 0;
+                padding: 1rem;
+                text-align: center;
             }
 
             nav .menu.active {
@@ -123,6 +125,7 @@
                 display: block;
             }
         }
+
     </style>
 </head>
 <body>
@@ -138,7 +141,9 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About Me</a></li>
             </ul>
-            <div class="nav-hover"><i class="fas fa-bars"></i></div>
+            <div class="nav-hover">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
