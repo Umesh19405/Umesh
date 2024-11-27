@@ -94,7 +94,7 @@
         }
 
         /* Mobile Navigation Styles */
-        @media (max-width: 768px) {
+        @media (max-width: 479px) {
             nav .menu {
                 display: none;
                 flex-direction: column;
@@ -117,6 +117,7 @@
         }
 
     </style>
+       <link  rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <!-- Header Navigation -->
@@ -151,12 +152,12 @@
 
     <script>
         // Mobile Navigation Toggle
-        const navHover = document.querySelector('.nav-hover');
+        /*const navHover = document.querySelector('.nav-hover');
         const menu = document.querySelector('.menu');
 
-        navHover.addEventListener('click', () => {
+        navHover.addEventListener('click', ()=> {
             menu.classList.toggle('active');
-        });
+        });*/
     </script>
 </body>
 </html>
